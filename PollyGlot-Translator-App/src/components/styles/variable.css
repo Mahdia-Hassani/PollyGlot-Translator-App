@@ -1,0 +1,35 @@
+:root {
+  /* Colors */
+  --color-primary: #035a9d;
+  --color-primary-hover: #02497f;
+
+  --color-title: #32cd32;
+
+  --color-header: #11203b;
+
+  --color-background: #eef2f8;
+
+  --color-card: #ffffff;
+
+  --color-border: #2b2b2b;
+
+  --color-text: #252525;
+
+  --color-subtitle: #ffffff;
+
+  /* Radius */
+
+  --radius-md: 12px;
+
+  /* Shadow */
+
+  --shadow-card: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  /* Container */
+
+  --container-width: 420px;
+
+  /* Font */
+
+  --font-family: "Poppins", system-ui, sans-serif;
+}

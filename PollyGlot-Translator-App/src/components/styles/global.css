@@ -1,3 +1,7 @@
+@import "./reset.css";
+@import "./variable.css";
+@import "./layout.css";
+
 * {
   margin: 0;
   padding: 0;

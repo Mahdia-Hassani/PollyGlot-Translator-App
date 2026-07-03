@@ -1,11 +1,11 @@
+import Header from "./Header";
+
 export default function AppLayout({ children }) {
   return (
-    <div className="app-container">
-      <header className="header">
-        <h1>PollyGlot</h1>
-      </header>
+    <>
+      <Header />
 
-      <main className="main-content">{children}</main>
-    </div>
+      <main className="main-container">{children}</main>
+    </>
   );
 }
