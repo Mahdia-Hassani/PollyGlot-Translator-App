@@ -4,7 +4,7 @@ import useTranslate from "../hooks/useTranslate";
 
 import Loader from "../ui/Loader";
 import ErrorMessage from "../ui/ErrorMessage";
-import ResultBox from "../translator/ResultBox";
+import ResultBox from "../translator/ResultBox/resultBox";
 
 export default function Result() {
   const { text, language, translation, loading, error } = useTranslate();

@@ -1,6 +1,8 @@
+import "./translatorButton.css";
+
 export default function TranslateButton({ onClick, disabled }) {
   return (
-    <button onClick={onClick} disabled={disabled}>
+    <button className="translate-btn" onClick={onClick} disabled={disabled}>
       Translate
     </button>
   );

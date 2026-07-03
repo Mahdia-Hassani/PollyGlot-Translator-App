@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <img src={logo} alt="PollyGlot logo" className="header-logo" />
+        <img className="header-logo" src={logo} alt="PollyGlot Logo" />
 
         <div className="header-text">
           <h1>PollyGlot</h1>

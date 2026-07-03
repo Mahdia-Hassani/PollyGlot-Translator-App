@@ -1,0 +1,47 @@
+.input-box {
+  margin-bottom: 2rem;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 0.8rem;
+
+  color: var(--color-primary);
+
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.translation-textarea {
+  width: 100%;
+  min-height: 160px;
+
+  padding: 1rem;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  background: #f9fafb;
+
+  resize: none;
+
+  font-size: 1rem;
+
+  color: var(--color-text);
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.translation-textarea::placeholder {
+  color: #9ca3af;
+}
+
+.translation-textarea:focus {
+  outline: none;
+
+  border-color: var(--color-primary);
+
+  box-shadow: 0 0 0 4px rgba(3, 90, 157, 0.12);
+}

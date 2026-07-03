@@ -7,3 +7,48 @@ body {
   width: min(100% - 2rem, var(--container-width));
   margin: 2rem auto;
 }
+
+.translator-card {
+  background: var(--color-card);
+  border: 4px solid var(--color-border);
+  border-radius: 15px;
+
+  padding: 1.5rem;
+
+  box-shadow: var(--shadow-card);
+}
+
+.input-box label {
+  display: block;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  color: var(--color-primary);
+
+  margin-bottom: 0.8rem;
+}
+
+.input-box textarea {
+  width: 100%;
+
+  min-height: 120px;
+
+  resize: none;
+
+  border-radius: 8px;
+
+  border: 1px solid #cfcfcf;
+
+  background: #f8f8f8;
+
+  padding: 1rem;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.input-box textarea:focus {
+  border-color: var(--color-primary);
+}
