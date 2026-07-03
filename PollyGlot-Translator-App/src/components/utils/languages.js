@@ -1,8 +1,26 @@
 export const languages = [
-  "English",
-  "French",
-  "Spanish",
-  "German",
-  "Arabic",
-  "Persian",
+  {
+    code: "en",
+    label: "English",
+  },
+  {
+    code: "fr",
+    label: "French",
+  },
+  {
+    code: "es",
+    label: "Spanish",
+  },
+  {
+    code: "de",
+    label: "German",
+  },
+  {
+    code: "ar",
+    label: "Arabic",
+  },
+  {
+    code: "fa",
+    label: "Persian",
+  },
 ];

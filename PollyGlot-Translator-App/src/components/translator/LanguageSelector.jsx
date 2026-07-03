@@ -6,15 +6,15 @@ export default function LanguageSelector({ language, setLanguage }) {
       <p>Select Language</p>
 
       {languages.map((lang) => (
-        <label key={lang} style={{ display: "block" }}>
+        <label key={lang.code}>
           <input
             type="radio"
             name="language"
-            value={lang}
-            checked={language === lang}
-            onChange={(e) => setLanguage(e.target.value)}
+            checked={language.code === lang.code}
+            onChange={() => setLanguage(lang)}
           />
-          {lang}
+
+          {lang.label}
         </label>
       ))}
     </div>
