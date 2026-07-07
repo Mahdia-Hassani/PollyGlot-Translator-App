@@ -41,3 +41,17 @@
   width: 100%;
   height: 100%;
 }
+
+@media (max-width: 400px) {
+  .header-content {
+    gap: 0.6rem;
+  }
+
+  .header-logo {
+    width: 60px;
+  }
+
+  .header-text h1 {
+    font-size: 1.6rem;
+  }
+}

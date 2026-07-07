@@ -1,3 +1,11 @@
+import "./Loader.css";
+
 export default function Loader() {
-  return <p>Translating...</p>;
+  return (
+    <div className="loader-container">
+      <div className="loader"></div>
+
+      <p>Translating...</p>
+    </div>
+  );
 }

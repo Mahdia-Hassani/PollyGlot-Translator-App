@@ -1,5 +1,11 @@
+import "./ErrorMessage.css";
+
 export default function ErrorMessage({ message }) {
   if (!message) return null;
 
-  return <p>{message}</p>;
+  return (
+    <div className="error-box">
+      <p>{message}</p>
+    </div>
+  );
 }

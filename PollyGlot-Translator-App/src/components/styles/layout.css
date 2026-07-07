@@ -52,3 +52,13 @@ body {
 .input-box textarea:focus {
   border-color: var(--color-primary);
 }
+
+@media (min-width: 768px) {
+  .main-container {
+    margin-top: 3rem;
+  }
+
+  .translator-card {
+    padding: 2rem;
+  }
+}
