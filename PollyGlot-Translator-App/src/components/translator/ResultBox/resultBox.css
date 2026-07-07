@@ -1,0 +1,32 @@
+.result-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.result-section h2 {
+  color: var(--color-primary);
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  margin-bottom: 0.7rem;
+}
+
+.result-content {
+  min-height: 120px;
+
+  background: #f8fafc;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 10px;
+
+  padding: 1rem;
+
+  color: var(--color-text);
+
+  font-size: 1rem;
+
+  line-height: 1.6;
+}

@@ -1,21 +1,19 @@
+import "./resultBox.css";
+
 export default function ResultBox({ text, translation, language }) {
   return (
-    <div>
-      <h2>Translation Result</h2>
+    <div className="result-wrapper">
+      <section className="result-section">
+        <h2>Original Text</h2>
 
-      <p>
-        <strong>Original:</strong>
-      </p>
+        <div className="result-content">{text}</div>
+      </section>
 
-      <p>{text}</p>
+      <section className="result-section">
+        <h2>{language.label} Translation</h2>
 
-      <br />
-
-      <p>
-        <strong>{language.label}:</strong>
-      </p>
-
-      <p>{translation}</p>
+        <div className="result-content">{translation}</div>
+      </section>
     </div>
   );
 }
