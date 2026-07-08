@@ -1,4 +1,4 @@
-import "./textInput.css";
+import "./TextInput.css";
 
 export default function TextInput({ text, setText }) {
   return (
