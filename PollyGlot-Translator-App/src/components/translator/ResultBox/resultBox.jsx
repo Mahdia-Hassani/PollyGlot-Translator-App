@@ -12,7 +12,9 @@ export default function ResultBox({ text, translation, language }) {
       <section className="result-section">
         <h2>{language.label} Translation</h2>
 
-        <div className="result-content">{translation}</div>
+        <div className="result-content">
+          {translation || "No translation available"}
+        </div>
       </section>
     </div>
   );
