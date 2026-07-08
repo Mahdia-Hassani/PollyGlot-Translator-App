@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8787";
+const API_URL = "https://pollyglot-worker.mahdiahassani2009.workers.dev";
 
 export async function translateText(text, language) {
   const response = await fetch(API_URL, {
