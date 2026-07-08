@@ -1,16 +1,46 @@
-# React + Vite
+# PollyGlot - AI Translation App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PollyGlot is an AI-powered translation application that helps users translate text into multiple languages using modern web technologies and AI APIs.
 
-Currently, two official plugins are available:
+The application provides a simple and clean interface where users can enter text, select a target language, and receive an AI-generated translation instantly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- AI-powered text translation
+- Support for multiple languages:
+- French 🇫🇷
+- Spanish 🇪🇸
+- Japanese 🇯🇵
 
-## Expanding the ESLint configuration
+- Figma-based responsive UI design
+- Fast translation experience
+- Loading state while processing requests
+- Error handling with user-friendly messages
+- Secure API key handling using Cloudflare Worker
+- Responsive design for different screen sizes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- JavaScript
+- CSS
+- React Router
+- Context API
+
+### Backend
+
+- Cloudflare Workers
+- OpenRouter API
+
+### Development Tools
+
+- Git & GitHub
+- VS Code
+- Wrangler CLI
