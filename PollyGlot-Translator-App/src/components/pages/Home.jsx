@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 
 import useTranslate from "../hooks/useTranslate";
 
+import { translateText } from "../services/translatorApi";
+
 import TextInput from "../translator/TextInput/textInput";
 import LanguageSelector from "../translator/LanguageSelector/languageSelector";
 import TranslateButton from "../translator/TranslateButton/translateButton";
@@ -9,13 +11,34 @@ import TranslateButton from "../translator/TranslateButton/translateButton";
 export default function Home() {
   const navigate = useNavigate();
 
-  const { text, setText, language, setLanguage, setTranslation } =
-    useTranslate();
+  const {
+    text,
+    setText,
+    language,
+    setLanguage,
+    setTranslation,
+    loading,
+    setLoading,
+    setError,
+  } = useTranslate();
 
-  function handleTranslate() {
-    setTranslation("Translation will appear here after API integration.");
+  async function handleTranslate() {
+    if (!text.trim()) return;
 
-    navigate("/result");
+    try {
+      setLoading(true);
+      setError("");
+
+      const result = await translateText(text, language.label);
+
+      setTranslation(result);
+
+      navigate("/result");
+    } catch (error) {
+      setError(error.message || "Translation failed");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -24,7 +47,10 @@ export default function Home() {
 
       <LanguageSelector language={language} setLanguage={setLanguage} />
 
-      <TranslateButton onClick={handleTranslate} disabled={!text.trim()} />
+      <TranslateButton
+        onClick={handleTranslate}
+        disabled={!text.trim() || loading}
+      />
     </div>
   );
 }
