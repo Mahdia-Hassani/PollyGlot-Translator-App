@@ -8,6 +8,9 @@ import TextInput from "../translator/TextInput/textInput";
 import LanguageSelector from "../translator/LanguageSelector/languageSelector";
 import TranslateButton from "../translator/TranslateButton/translateButton";
 
+import Loader from "../ui/Loader";
+import ErrorMessage from "../ui/ErrorMessage";
+
 export default function Home() {
   const navigate = useNavigate();
 
@@ -19,6 +22,7 @@ export default function Home() {
     setTranslation,
     loading,
     setLoading,
+    error,
     setError,
   } = useTranslate();
 
@@ -46,6 +50,10 @@ export default function Home() {
       <TextInput text={text} setText={setText} />
 
       <LanguageSelector language={language} setLanguage={setLanguage} />
+
+      {loading && <Loader />}
+
+      <ErrorMessage message={error} />
 
       <TranslateButton
         onClick={handleTranslate}
